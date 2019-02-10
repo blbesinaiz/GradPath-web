@@ -1,17 +1,24 @@
-﻿<%@ Page Title="Contact" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="Contact.aspx.cs" Inherits="Path_Grad_v3__Web_.Contact" %>
+﻿<%@ Page Title="Contact Information" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="Contact.aspx.cs" Inherits="Path_Grad_v3__Web_.Contact" %>
 
 <asp:Content ID="BodyContent" ContentPlaceHolderID="MainContent" runat="server">
-    <h2><%: Title %>.</h2>
-    <h3>Your contact page.</h3>
+    <h2><%: Title %></h2>
+    <h3> Software Developer: Brianna Besinaiz </h3>
     <address>
-        One Microsoft Way<br />
-        Redmond, WA 98052-6399<br />
-        <abbr title="Phone">P:</abbr>
-        425.555.0100
+        Norfolk State University<br />
+        700 Park Avenue <br />
+        Norfolk, VA, 23504 <br />
+
     </address>
 
+    <h3> User Experience (UX) Design: Donn Shannon </h3>
     <address>
-        <strong>Support:</strong>   <a href="mailto:Support@example.com">Support@example.com</a><br />
-        <strong>Marketing:</strong> <a href="mailto:Marketing@example.com">Marketing@example.com</a>
+        Norfolk State University<br />
+        700 Park Avenue <br />
+        Norfolk, VA, 23504 <br />
+        </address>
+
+    <address>
+        <strong>Technical Support:</strong>   <a href="mailto:TechSupport@nsu.com">TechSupport@nsu.com</a><br />
+        <strong>Comments or Concerns:</strong> <a href="mailto:Comments@nsu.com">Comments@nsu.com</a>
     </address>
 </asp:Content>
