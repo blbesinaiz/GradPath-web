@@ -16,3 +16,6 @@ environment for developer purposes
 ## Learning ASP.NET Webform
 1. Youtube Channel Playlist: [ASP.NET Tutorial for Beginners](https://www.youtube.com/watch?v=3AYoipyqOkQ&list=PL6n9fhu94yhXQS_p1i-HLIftB9Y7Vnxlo)
 
+## UX Customizations
+1. Changing Bootstrap Theme [Video Tutorial](https://www.youtube.com/watch?v=OlIkIv5IpY0)
+    * Websites: [Bootswatch](https://bootswatch.com/), [WowSlider](http://wowslider.com/posts/35-top-free-bootstrap-templates-2016-95.html)
