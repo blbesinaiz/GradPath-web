@@ -11,26 +11,8 @@ students to efficiently map out classes for upcoming semester.
 Although this is a prototype, Path To Grad has much future potential
 as a tool to help students.
 
-
-#Have Screenshot of Student View Page
-<p align="center">
-  <img src="./img/example.png" alt="Size Limit example"
-       width="654" height="450">
-</p>
-
-#Have Screenshot of perfect path generation, alternate paths, profile customization
-
-<p align="center">
-  <img src="./img/why.png" alt="Bundle Analyzer example"
-       width="650" height="335">
-</p>
-
-<p align="center">
-  <a href="https://evilmartians.com/?utm_source=size-limit">
-    <img src="https://evilmartians.com/badges/sponsored-by-evil-martians.svg"
-         alt="Sponsored by Evil Martians" width="236" height="54">
-  </a>
-</p>
+[comment]: <> (#Have Screenshot of Student View Page)
+[comment]: <> (#Have Screenshot of perfect path generation, alternate paths, profile customization)
 
 ## Intended Audience
 
@@ -47,20 +29,21 @@ You can find a video demo here:....
 
 ## Usage
 
-1. Install `Visual Studio 2017`
-   1.1 Within VS 2017, Add MongoDB Driver nuget package
+1. Visual Studio 2017 
+* Install [Visual Studio 2017](https://visualstudio.microsoft.com/downloads/) v. 15.9
+* Add MongoDB Driver nuget package
    ```sh
    $ Install-Package mongocsharpdriver
    ```
-2. Add JSON nuget package
+* Add JSON nuget package
    ```sh
    $ Install-Package Newtonsoft.Json
    ```
-   
-3. Install MongoDB 4.0.6 Community Server
-4. Install MongoDB Compass (Optional UI)
-5. Clone/Add database??
-
+2. Mongo DB Server and Compass 
+* Install [MongoDB 4.0.6 Community Server](https://www.mongodb.com/download-center/community
+* Install [MongoDB Compass 1.16.3 (stable)](https://www.mongodb.com/download-center/compass?jmp=hero)
+* Run Server on localhost:27107
+* Somehow clone database to your copy
 
 
 # References
