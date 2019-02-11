@@ -30,20 +30,20 @@ You can find a video demo here:....
 ## Usage
 
 1. Visual Studio 2017 
-* Install [Visual Studio 2017](https://visualstudio.microsoft.com/downloads/) v. 15.9
-* Add MongoDB Driver nuget package
-   ```sh
-   $ Install-Package mongocsharpdriver
-   ```
-* Add JSON nuget package
-   ```sh
-   $ Install-Package Newtonsoft.Json
-   ```
+     * Install [Visual Studio 2017](https://visualstudio.microsoft.com/downloads/) verson 15.9
+     * Add MongoDB Driver nuget package
+        ```sh
+        $ Install-Package mongocsharpdriver
+        ```
+     * Add JSON nuget package
+        ```sh
+        $ Install-Package Newtonsoft.Json
+        ```
 2. Mongo DB Server and Compass 
-* Install [MongoDB 4.0.6 Community Server](https://www.mongodb.com/download-center/community
-* Install [MongoDB Compass 1.16.3 (stable)](https://www.mongodb.com/download-center/compass?jmp=hero)
-* Run Server on localhost:27107
-* Somehow clone database to your copy
+     * Install [MongoDB 4.0.6 Community Server](https://www.mongodb.com/download-center/community)
+     * Install [MongoDB Compass 1.16.3 (stable)](https://www.mongodb.com/download-center/compass?jmp=hero)
+     * Run Server on localhost:27107
+     * Somehow clone database to your copy
 
 
 # References
