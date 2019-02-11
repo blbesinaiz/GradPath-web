@@ -1,6 +1,5 @@
 # Path To Graduation
 
-#Have Screenshot of home page w/ logo
 <img src="https://github.com/blbesinaiz/GradPath-web/blob/master/Path%20Grad%20v3%20(Web)/Img/Path%20To%20Grad%20Logo.png" align="right"
      title="Size Limit logo by Anton Lovchikov" width="120" height="178">
 
@@ -53,14 +52,14 @@ You can find a video demo here:....
    ```sh
    $ Install-Package mongocsharpdriver
    ```
-   1.2 Add JSON nuget packager
+2. Add JSON nuget package
    ```sh
    $ Install-Package Newtonsoft.Json
    ```
    
-2. Install MongoDB 4.0.6 Community Server
-   2.1 Install MongoDB Compass (Optional UI)
-   2.2 Add database??
+3. Install MongoDB 4.0.6 Community Server
+4. Install MongoDB Compass (Optional UI)
+5. Clone/Add database??
 
 
 
