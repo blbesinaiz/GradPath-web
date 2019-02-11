@@ -1,7 +1,7 @@
 # Path To Graduation
 
 #Have Screenshot of home page w/ logo
-<img src="https://ai.github.io/size-limit/logo.svg" align="right"
+<img src="https://github.com/blbesinaiz/GradPath-web/blob/master/Path%20Grad%20v3%20(Web)/Img/Path%20To%20Grad%20Logo.png" align="right"
      title="Size Limit logo by Anton Lovchikov" width="120" height="178">
 
 Path to Graduation is a tool for NSU students to use in conjunction
@@ -64,6 +64,6 @@ You can find a video demo here:....
 
 
 
-## References
-# MongoDB Guides
+# References
+## MongoDB Guides
 https://www.codeproject.com/Articles/656093/Connecting-MongoDB-with-ASP-NET
