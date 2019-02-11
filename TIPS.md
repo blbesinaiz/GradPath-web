@@ -1,4 +1,4 @@
-#Tips and Tricks
+# Tips and Tricks
 * This document contains helptufl tips and tricks to setting up the project
 environment for developer purposes
 
