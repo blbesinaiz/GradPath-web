@@ -12,6 +12,7 @@ environment for developer purposes
 
 ## MongoDB
 1. Use the [Getting Started MongoDB](https://docs.mongodb.com/manual/tutorial/getting-started/) Guide to get familiar with MongoDb
+2. If Mongo DB gives error message "Could not connect to MondogDB on the provided host port": Go to Windows `Services` and START `MongoDB`
 
 ## Learning ASP.NET Webform
 1. Youtube Channel Playlist: [ASP.NET Tutorial for Beginners](https://www.youtube.com/watch?v=3AYoipyqOkQ&list=PL6n9fhu94yhXQS_p1i-HLIftB9Y7Vnxlo)
