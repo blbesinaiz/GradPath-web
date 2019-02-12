@@ -13,5 +13,10 @@ namespace Path_Grad_v3__Web_.Student
         {
 
         }
+
+        protected void SetupModify_Click(object sender, EventArgs e)
+        {
+            Response.Write("<script>alert('Manage Account')<script>");
+        }
     }
 }

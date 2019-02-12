@@ -4,6 +4,7 @@
 
 <html lang="en">
 <head runat="server">
+       
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title><%: Page.Title %> | Path To Grad </title>
@@ -13,6 +14,17 @@
     </asp:PlaceHolder>
     <webopt:bundlereference runat="server" path="~/Content/css" />
     <link href="~/favicon1.ico" rel="shortcut icon" type="image/x-icon" />
+
+     <!-- Open popup window!!
+    <script type ="text/javascript">
+        function OpenNewWindow() {
+            var Nme = document.getElementById('txtName').value;
+            var Email = document.getElementByID('txtEmail').value;
+
+            window.open('~/Account/StudentManage.aspx', 'location = no, resizable = no', true)
+        }
+
+    </script> -->
 
 </head>
 <body>
@@ -37,6 +49,7 @@
             </Scripts>
         </asp:ScriptManager>
 
+        <!--  NAVIGATION BAR -->
         <div class="navbar navbar-inverse navbar-fixed-top">
             <div class="container">
                 <div class="navbar-header">
@@ -65,24 +78,30 @@
                 </div>
             </div>
         </div>
+
+        <!--  STUDENT PROFILE -->
         <div class="container body-content">
                 <div class="row">
                     <div class="col-md-4">
-                        <h3>Stuent Profile</h3>
-                            <asp:Panel ID="Panel_Profile" runat="server">
-                                <asp:Image ID="Profile_Pic" runat="server" Height="78px" Width="132px" /><br />
+                        <h3>Profile</h3>
+                            <asp:Panel ID="Panel_Profile" runat="server" BorderColor="Black" BorderStyle="Solid" BorderWidth="1px" Height="180px">
+                                <asp:Image ID="Profile_Pic" runat="server" Height="78px" Width="132px" BorderStyle="Solid" ImageAlign="Bottom" /><br />
                                 <asp:Label ID="StudentID" runat="server" Text="Student ID: "></asp:Label>
                                     <asp:Label ID="UserID" runat="server" Text="xxxxxx"></asp:Label><br />
                                 <asp:Label ID="Email" runat="server" Text="Email: "></asp:Label>
                                     <asp:Label ID="userEmail" runat="server" Text="xxxx@nsu.edu"></asp:Label><br />
                                 <asp:Label ID="Advisor" runat="server" Text="Advisor: "></asp:Label>
-                                    <asp:Label ID="userAdvisor" runat="server" Text="Dr. xxxxx"></asp:Label>
+                                    <asp:Label ID="userAdvisor" runat="server" Text="Dr. xxxxx"></asp:Label><br />
+                                <asp:Button ID="Button1" runat="server" Text="Button" OnClientClick ="window.open();" />
+                                <asp:Label ID="Percentage" runat="server" Text="xx/100"></asp:Label>
+                                    <asp:Label ID="AccountStatus" runat="server" Text="% Complete"></asp:Label><br />
                             </asp:Panel>
                     </div>
+                    <!--  STUDENT STATUS -->
                     <div class="col-md-4">
-                        <h3>Degree Status </h3>
-                             <asp:Panel ID="Panel_Status" runat="server">
-                                 <asp:Chart ID="Chart1" runat="server" EnableViewState="True">
+                        <h3>Progress </h3>
+                             <asp:Panel ID="Panel_Status" runat="server" BorderStyle="Solid" BorderWidth="1px" HorizontalAlign="Center">
+                                 <asp:Chart ID="Chart1" runat="server" EnableViewState="True" Height="180px">
                                      <Series>
                                          <asp:Series Name="Series1"></asp:Series>
                                      </Series>
@@ -92,9 +111,10 @@
                                  </asp:Chart>
                               </asp:Panel>
                     </div>
+                    <!--  STUDENT SNAPSHOT-->
                     <div class="col-md-4">
-                        <h3>Degree Snapshot</h3>
-                            <asp:Panel ID="Panel_Snapshot" runat="server">
+                        <h3>Snapshot</h3>
+                            <asp:Panel ID="Panel_Snapshot" runat="server" BorderStyle="Solid" BorderWidth="1px" Height="180px">
                                 <asp:Label ID="CreditNeeded" runat="server" Text="Credits Needed: "></asp:Label>
                                     <asp:Label ID="userNeed" runat="server" Text="xx"></asp:Label><br />
                                 <asp:Label ID="CreditAccum" runat="server" Text="Credits Accumulated: "></asp:Label>
@@ -102,6 +122,7 @@
                             </asp:Panel>
                     </div>
                 </div>
+            <!--  PLACE HOLDER FOR CONTENT -->
             <asp:ContentPlaceHolder ID="MainContent" runat="server">
             </asp:ContentPlaceHolder>
             <hr />
