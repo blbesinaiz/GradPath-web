@@ -47,5 +47,8 @@ You can find a video demo here:....
 
 
 # References
-## MongoDB Guides
+### MongoDB Guides
 https://www.codeproject.com/Articles/656093/Connecting-MongoDB-with-ASP-NET
+
+### Inspiratons
+* [Course Road](https://github.com/dannybd/courseroad)
