@@ -5,9 +5,9 @@ using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
 
-namespace Path_Grad_v3__Web_.Account
+namespace Path_Grad_v3__Web_.Student
 {
-    public partial class Lockout : System.Web.UI.Page
+    public partial class PerfectPath : System.Web.UI.Page
     {
         protected void Page_Load(object sender, EventArgs e)
         {

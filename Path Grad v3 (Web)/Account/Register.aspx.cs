@@ -4,6 +4,8 @@ using System.Web;
 using System.Web.UI;
 using Microsoft.AspNet.Identity;
 using Microsoft.AspNet.Identity.Owin;
+using MongoDB.Bson;
+using MongoDB.Driver;
 using Owin;
 using Path_Grad_v3__Web_.Models;
 
@@ -13,24 +15,26 @@ namespace Path_Grad_v3__Web_.Account
     {
         protected void CreateUser_Click(object sender, EventArgs e)
         {
-            var manager = Context.GetOwinContext().GetUserManager<ApplicationUserManager>();
-            var signInManager = Context.GetOwinContext().Get<ApplicationSignInManager>();
-            var user = new ApplicationUser() { UserName = Email.Text, Email = Email.Text };
-            IdentityResult result = manager.Create(user, Password.Text);
-            if (result.Succeeded)
-            {
-                // For more information on how to enable account confirmation and password reset please visit https://go.microsoft.com/fwlink/?LinkID=320771
-                //string code = manager.GenerateEmailConfirmationToken(user.Id);
-                //string callbackUrl = IdentityHelper.GetUserConfirmationRedirectUrl(code, user.Id, Request);
-                //manager.SendEmail(user.Id, "Confirm your account", "Please confirm your account by clicking <a href=\"" + callbackUrl + "\">here</a>.");
+            //Make a connection with DB for Login collection
+            var conString = "mongodb://localhost:27017";
+            var Client = new MongoClient(conString);
+            var DB = Client.GetDatabase("Path_To_Grad");
+            var collection = DB.GetCollection<BsonDocument>("Login");
 
-                signInManager.SignIn( user, isPersistent: false, rememberBrowser: false);
-                IdentityHelper.RedirectToReturnUrl(Request.QueryString["ReturnUrl"], Response);
-            }
-            else 
+            var document = new BsonDocument
             {
-                ErrorMessage.Text = result.Errors.FirstOrDefault();
-            }
+              {"_id", Convert.ToInt32(StudentID.Text)},
+              {"password", Password.Text},
+              { "First", FirstName.Text},
+               { "Last", LastName.Text},
+              { "email", Email.Text },
+              { "classfication", Classification.Text}
+            };
+
+            collection.InsertOne(document);
+
+            //Access Student View
+            Response.Redirect("~/Account/Confirm.aspx");
         }
     }
 }

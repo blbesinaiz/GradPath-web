@@ -7,11 +7,11 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace Path_Grad_v3__Web_.Account
+namespace Path_Grad_v3__Web_.Student
 {
 
 
-    public partial class Lockout
+    public partial class AlternatePaths
     {
     }
 }

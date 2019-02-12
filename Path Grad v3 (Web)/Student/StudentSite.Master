@@ -1,4 +1,4 @@
-﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site.master.cs" Inherits="Path_Grad_v3__Web_.SiteMaster" %>
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="StudentSite.master.cs" Inherits="Path_Grad_v3__Web_.Student.StudentSite" %>
 
 <!DOCTYPE html>
 
@@ -49,29 +49,59 @@
                 </div>
                 <div class="navbar-collapse collapse">
                     <ul class="nav navbar-nav">
-                        <li><a runat="server" href="~/About">About</a></li>
-                        <li><a runat="server" href="~/Contact">Contact</a></li>
+                        <li><a runat="server" href="~/Student/DegreeStatus">Degree Status</a></li>
+                        <li><a runat="server" href="~/Student/PerfectPath">Perfect Path</a></li>
+                        <li><a runat="server" href="~/Student/AlternatePaths">Alternat Paths</a></li>
+                        <li><a runat="server" href="~/Student/WhatIf">What-If Central</a></li>
                     </ul>
-                    <asp:LoginView runat="server" ViewStateMode="Disabled">
+                    <asp:LoginView runat="server" ViewStateMode="Enabled">
                         <AnonymousTemplate>
                             <ul class="nav navbar-nav navbar-right">
-                                <li><a runat="server" href="~/Account/Register">Register</a></li>
-                                <li><a runat="server" href="~/Account/Login">Log in</a></li>
+                                <asp:Label ID="Welcome" runat="server" Text="Welcome"></asp:Label>
+                                <li><a runat="server" href="~/Default">Log Off</a></li>
                             </ul>
                         </AnonymousTemplate>
-                        <LoggedInTemplate>
-                            <ul class="nav navbar-nav navbar-right">
-                                <li><a runat="server" href="~/Account/Manage" title="Manage your account">Hello, <%: Context.User.Identity.GetUserName()  %> !</a></li>
-                                <li>
-                                    <asp:LoginStatus runat="server" LogoutAction="Redirect" LogoutText="Log off" LogoutPageUrl="~/" OnLoggingOut="Unnamed_LoggingOut" />
-                                </li>
-                            </ul>
-                        </LoggedInTemplate>
                     </asp:LoginView>
                 </div>
             </div>
         </div>
         <div class="container body-content">
+                <div class="row">
+                    <div class="col-md-4">
+                        <h3>Stuent Profile</h3>
+                            <asp:Panel ID="Panel_Profile" runat="server">
+                                <asp:Image ID="Profile_Pic" runat="server" Height="78px" Width="132px" /><br />
+                                <asp:Label ID="StudentID" runat="server" Text="Student ID: "></asp:Label>
+                                    <asp:Label ID="UserID" runat="server" Text="xxxxxx"></asp:Label><br />
+                                <asp:Label ID="Email" runat="server" Text="Email: "></asp:Label>
+                                    <asp:Label ID="userEmail" runat="server" Text="xxxx@nsu.edu"></asp:Label><br />
+                                <asp:Label ID="Advisor" runat="server" Text="Advisor: "></asp:Label>
+                                    <asp:Label ID="userAdvisor" runat="server" Text="Dr. xxxxx"></asp:Label>
+                            </asp:Panel>
+                    </div>
+                    <div class="col-md-4">
+                        <h3>Degree Status </h3>
+                             <asp:Panel ID="Panel_Status" runat="server">
+                                 <asp:Chart ID="Chart1" runat="server" EnableViewState="True">
+                                     <Series>
+                                         <asp:Series Name="Series1"></asp:Series>
+                                     </Series>
+                                     <ChartAreas>
+                                         <asp:ChartArea Name="ChartArea1"></asp:ChartArea>
+                                     </ChartAreas>
+                                 </asp:Chart>
+                              </asp:Panel>
+                    </div>
+                    <div class="col-md-4">
+                        <h3>Degree Snapshot</h3>
+                            <asp:Panel ID="Panel_Snapshot" runat="server">
+                                <asp:Label ID="CreditNeeded" runat="server" Text="Credits Needed: "></asp:Label>
+                                    <asp:Label ID="userNeed" runat="server" Text="xx"></asp:Label><br />
+                                <asp:Label ID="CreditAccum" runat="server" Text="Credits Accumulated: "></asp:Label>
+                                    <asp:Label ID="userAccum" runat="server" Text="xx"></asp:Label><br />
+                            </asp:Panel>
+                    </div>
+                </div>
             <asp:ContentPlaceHolder ID="MainContent" runat="server">
             </asp:ContentPlaceHolder>
             <hr />

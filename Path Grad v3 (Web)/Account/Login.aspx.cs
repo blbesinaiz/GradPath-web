@@ -51,7 +51,7 @@ namespace Path_Grad_v3__Web_.Account
                 user.Email = bsonObject["email"].AsString;
 
                 //Access Student View
-                Response.Redirect("~/Student/StudentView.aspx");
+                Response.Redirect("~/Student/DegreeStatus.aspx");
                 //PostBackUrl = "~/Confirm.aspx"
             }
             else if (userList.Count > 1)
