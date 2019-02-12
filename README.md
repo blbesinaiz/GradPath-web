@@ -1,7 +1,6 @@
 # Path To Graduation
 
-#Have Screenshot of home page w/ logo
-<img src="https://ai.github.io/size-limit/logo.svg" align="right"
+<img src="https://github.com/blbesinaiz/GradPath-web/blob/master/Path%20Grad%20v3%20(Web)/Img/Path%20To%20Grad%20Logo.png" align="right"
      title="Size Limit logo by Anton Lovchikov" width="120" height="178">
 
 Path to Graduation is a tool for NSU students to use in conjunction
@@ -12,26 +11,8 @@ students to efficiently map out classes for upcoming semester.
 Although this is a prototype, Path To Grad has much future potential
 as a tool to help students.
 
-
-#Have Screenshot of Student View Page
-<p align="center">
-  <img src="./img/example.png" alt="Size Limit example"
-       width="654" height="450">
-</p>
-
-#Have Screenshot of perfect path generation, alternate paths, profile customization
-
-<p align="center">
-  <img src="./img/why.png" alt="Bundle Analyzer example"
-       width="650" height="335">
-</p>
-
-<p align="center">
-  <a href="https://evilmartians.com/?utm_source=size-limit">
-    <img src="https://evilmartians.com/badges/sponsored-by-evil-martians.svg"
-         alt="Sponsored by Evil Martians" width="236" height="54">
-  </a>
-</p>
+[comment]: <> (#Have Screenshot of Student View Page)
+[comment]: <> (#Have Screenshot of perfect path generation, alternate paths, profile customization)
 
 ## Intended Audience
 
@@ -48,22 +29,23 @@ You can find a video demo here:....
 
 ## Usage
 
-1. Install `Visual Studio 2017`
-   1.1 Within VS 2017, Add MongoDB Driver nuget package
-   ```sh
-   $ Install-Package mongocsharpdriver
-   ```
-   1.2 Add JSON nuget packager
-   ```sh
-   $ Install-Package Newtonsoft.Json
-   ```
-   
-2. Install MongoDB 4.0.6 Community Server
-   2.1 Install MongoDB Compass (Optional UI)
-   2.2 Add database??
+1. Visual Studio 2017 
+     * Install [Visual Studio 2017](https://visualstudio.microsoft.com/downloads/) verson 15.9
+     * Add MongoDB Driver nuget package
+        ```sh
+        $ Install-Package mongocsharpdriver
+        ```
+     * Add JSON nuget package
+        ```sh
+        $ Install-Package Newtonsoft.Json
+        ```
+2. Mongo DB Server and Compass 
+     * Install [MongoDB 4.0.6 Community Server](https://www.mongodb.com/download-center/community)
+     * Install [MongoDB Compass 1.16.3 (stable)](https://www.mongodb.com/download-center/compass?jmp=hero)
+     * Run Server on localhost:27107
+     * Somehow clone database to your copy
 
 
-
-## References
-# MongoDB Guides
+# References
+## MongoDB Guides
 https://www.codeproject.com/Articles/656093/Connecting-MongoDB-with-ASP-NET
