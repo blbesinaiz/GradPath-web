@@ -31,6 +31,7 @@ You can find a video demo here:....
 
 1. Visual Studio 2017 
      * Install [Visual Studio 2017](https://visualstudio.microsoft.com/downloads/) verson 15.9
+     * Within the Installer install: .NET Desktop Development, Universal Windows Platorm Development, ASP.NET and Web Development
      * Add MongoDB Driver nuget package
         ```sh
         $ Install-Package mongocsharpdriver
