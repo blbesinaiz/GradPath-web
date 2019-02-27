@@ -1,11 +1,24 @@
 ﻿<%@ Page Title="Welcome" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="Default.aspx.cs" Inherits="Path_Grad_v3__Web_._Default" %>
 
+<script runat="server">
+
+    protected void Page_Load(object sender, EventArgs e)
+    {
+
+    }
+</script>
+
+
 <asp:Content ID="BodyContent" ContentPlaceHolderID="MainContent" runat="server">
 
     <div class="jumbotron">
-        <h1>Path To Grad</h1>
-        <p class="lead">Quick Blurb on Path to Grad</p>
-    </div>
+        <h1 style="text-decoration: underline"><strong>Path To Grad</strong></h1>
+        <p class="lead">
+        <img src="https://github.com/blbesinaiz/GradPath-web/blob/master/Path%20Grad%20v3%20(Web)/Img/Path%20To%20Grad%20Logo.png?raw=true" align="right" />Welcome to your Path to Graduation! This web application is designed with students *and* 
+            advisors in mind, to help navigate the initially uncertain and hard-to-understand process of setting 
+            up a curriculum necessary to graduate from your college or university. Use the navigation menu above 
+            to get started!</p>
+&nbsp;&nbsp;</div>
 
     <!--
     <div class="row">
