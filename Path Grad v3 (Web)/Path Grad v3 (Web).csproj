@@ -175,6 +175,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="About-default.aspx" />
     <Content Include="About.aspx" />
     <Content Include="Account\Confirm.aspx" />
     <Content Include="Account\Forgot.aspx" />
@@ -185,6 +186,7 @@
     <Content Include="Account\Register.aspx" />
     <Content Include="Account\ResetPassword.aspx" />
     <Content Include="Account\ResetPasswordConfirmation.aspx" />
+    <Content Include="Contact-default.aspx" />
     <Content Include="Contact.aspx" />
     <Content Include="Content\bootstrap-theme.css" />
     <Content Include="Content\bootstrap-theme.min.css" />
@@ -205,6 +207,17 @@
     <Content Include="Content\bootstrap-theme.css.map" />
     <Content Include="Account\Web.config" />
     <None Include="Scripts\jquery-3.3.1.intellisense.js" />
+    <Content Include="Img\Path To Grad Logo.png" />
+    <Content Include="Img\profile_icon.png" />
+    <Content Include="Img\Roadmap\0.png" />
+    <Content Include="Img\Roadmap\1.png" />
+    <Content Include="Img\Roadmap\2.png" />
+    <Content Include="Img\Roadmap\3.png" />
+    <Content Include="Img\Roadmap\4.png" />
+    <Content Include="Img\Roadmap\5.png" />
+    <Content Include="Img\Roadmap\6.png" />
+    <Content Include="Img\Roadmap\7.png" />
+    <Content Include="Img\Roadmap\8.png" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
     <Content Include="Scripts\jquery-3.3.1.js" />

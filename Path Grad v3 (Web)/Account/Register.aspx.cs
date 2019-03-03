@@ -36,5 +36,10 @@ namespace Path_Grad_v3__Web_.Account
             //Access Student View
             Response.Redirect("~/Account/Confirm.aspx");
         }
+
+        protected void Page_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

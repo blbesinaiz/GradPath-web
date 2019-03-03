@@ -1,4 +1,4 @@
-﻿<%@ Page Title="Contact Information" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="Contact.aspx.cs" Inherits="Path_Grad_v3__Web_.Contact" %>
+﻿<%@ Page Title="Contact Us!" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="Contact.aspx.cs" Inherits="Path_Grad_v3__Web_.Contact" %>
 
 <script runat="server">
 
@@ -10,7 +10,7 @@
 
 
 <asp:Content ID="BodyContent" ContentPlaceHolderID="MainContent" runat="server">
-    <h2><%: Title %>Contact Us!</h2>
+    <h2><%: Title %></h2>
 
     <address>If you have any ideas for improvements, or usability questions the Readme 
         documentation and requirements documents do not answer, let us know! We 
