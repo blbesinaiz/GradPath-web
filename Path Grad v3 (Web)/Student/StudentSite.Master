@@ -15,16 +15,12 @@
     <webopt:bundlereference runat="server" path="~/Content/css" />
     <link href="~/favicon1.ico" rel="shortcut icon" type="image/x-icon" />
 
-     <!-- Open popup window!!
+     <!-- Open Settings popup window!! -->
     <script type ="text/javascript">
         function OpenNewWindow() {
-            var Nme = document.getElementById('txtName').value;
-            var Email = document.getElementByID('txtEmail').value;
-
-            window.open('~/Account/StudentManage.aspx', 'location = no, resizable = no', true)
+            window.open("Settings.aspx","mywindow","location=10,status=1,scrollbars=1,width=300,height=500");
         }
-
-    </script> -->
+    </script>
 
 </head>
 <body>
@@ -92,7 +88,7 @@
                                     <asp:Label ID="userEmail" runat="server" Text="xxxx@nsu.edu"></asp:Label><br />
                                 <asp:Label ID="Advisor" runat="server" Text="Advisor: "></asp:Label>
                                     <asp:Label ID="userAdvisor" runat="server" Text="Dr. xxxxx"></asp:Label><br />
-                                <asp:Button ID="Button1" runat="server" Text="Button" OnClientClick ="window.open();" />
+                                <asp:Button ID="Button1" runat="server" Text="Customize" OnClientClick ="OpenNewWindow();"/><br />
                                 <asp:Label ID="Percentage" runat="server" Text="xx/100"></asp:Label>
                                     <asp:Label ID="AccountStatus" runat="server" Text="% Complete"></asp:Label><br />
                             </asp:Panel>
@@ -122,10 +118,11 @@
                             </asp:Panel>
                     </div>
                 </div>
+            <hr />
+            <br /><br />
             <!--  PLACE HOLDER FOR CONTENT -->
             <asp:ContentPlaceHolder ID="MainContent" runat="server">
             </asp:ContentPlaceHolder>
-            <hr />
             <footer>
                 <p>Norfolk State Univeristy &copy; <%: DateTime.Now.Year %> -&nbsp; Path To Grdauation By Brianna and Donn</p>
             </footer>

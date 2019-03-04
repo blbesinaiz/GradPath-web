@@ -237,6 +237,7 @@
     <Content Include="Student\AlternatePaths.aspx" />
     <Content Include="Student\DegreeStatus.aspx" />
     <Content Include="Student\PerfectPath.aspx" />
+    <Content Include="Student\Settings.aspx" />
     <Content Include="Student\WhatIf.aspx" />
     <Content Include="ViewSwitcher.ascx" />
     <Content Include="Web.config" />
@@ -367,6 +368,13 @@
     </Compile>
     <Compile Include="Student\PerfectPath.aspx.designer.cs">
       <DependentUpon>PerfectPath.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Student\Settings.aspx.cs">
+      <DependentUpon>Settings.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Student\Settings.aspx.designer.cs">
+      <DependentUpon>Settings.aspx</DependentUpon>
     </Compile>
     <Compile Include="Student\StudentSite.Master.cs">
       <DependentUpon>StudentSite.Master</DependentUpon>
