@@ -18,7 +18,7 @@
      <!-- Open Settings popup window!! -->
     <script type ="text/javascript">
         function OpenNewWindow() {
-            window.open("Settings.aspx","mywindow","location=10,status=1,scrollbars=1,width=300,height=500");
+            window.open("SimpleTabControl.aspx","mywindow","location=10,status=1,scrollbars=1,width=300,height=500");
         }
     </script>
 
