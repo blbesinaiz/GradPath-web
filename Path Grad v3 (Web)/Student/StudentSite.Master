@@ -18,7 +18,7 @@
      <!-- Open Settings popup window!! -->
     <script type ="text/javascript">
         function OpenNewWindow() {
-            window.open("SimpleTabControl.aspx","mywindow","location=10,status=1,scrollbars=1,width=300,height=500");
+            window.open("SimpleTabControl.aspx","mywindow","location=10,status=1,scrollbars=1,width=500,height=500");
         }
     </script>
 
@@ -58,7 +58,6 @@
                 </div>
                 <div class="navbar-collapse collapse">
                     <ul class="nav navbar-nav">
-                        <li><a runat="server" href="~/Student/DegreeStatus">Degree Status</a></li>
                         <li><a runat="server" href="~/Student/PerfectPath">Perfect Path</a></li>
                         <li><a runat="server" href="~/Student/AlternatePaths">Alternat Paths</a></li>
                         <li><a runat="server" href="~/Student/WhatIf">What-If Central</a></li>
