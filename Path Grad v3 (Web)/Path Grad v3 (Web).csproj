@@ -254,7 +254,6 @@
     <Content Include="Scripts\WebForms\WebUIValidation.js" />
     <Content Include="Site.Master" />
     <Content Include="Student\AlternatePaths.aspx" />
-    <Content Include="Student\DegreeStatus.aspx" />
     <Content Include="Student\Images\InitialImage.png" />
     <Content Include="Student\PerfectPath.aspx" />
     <Content Include="Student\Images\SelectedButton.png" />
@@ -411,13 +410,6 @@
     </Compile>
     <Compile Include="Student\StudentSite.Master.designer.cs">
       <DependentUpon>StudentSite.Master</DependentUpon>
-    </Compile>
-    <Compile Include="Student\DegreeStatus.aspx.cs">
-      <DependentUpon>DegreeStatus.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Student\DegreeStatus.aspx.designer.cs">
-      <DependentUpon>DegreeStatus.aspx</DependentUpon>
     </Compile>
     <Compile Include="Student\WhatIf.aspx.cs">
       <DependentUpon>WhatIf.aspx</DependentUpon>

@@ -76,7 +76,7 @@
             </asp:ContentPlaceHolder>
             <hr />
             <footer>
-                <p>Norfolk State Univeristy &copy; <%: DateTime.Now.Year %> -&nbsp; Path To Grdauation By Brianna and Donn</p>
+                <p>Norfolk State Univeristy &copy; <%: DateTime.Now.Year %> -&nbsp; Path To Graduation By Brianna and Donn</p>
             </footer>
         </div>
     </form>

@@ -104,7 +104,7 @@ figure {
 }
 hr {
   box-sizing: content-box;
-  height: 0;
+  height: 362px;
 }
 pre {
   overflow: auto;
@@ -122,8 +122,7 @@ optgroup,
 select,
 textarea {
   color: inherit;
-  font: inherit;
-  margin: 0;
+  margin: 0 0 0 0px;
 }
 button {
   overflow: visible;
@@ -1109,9 +1108,7 @@ figure {
 }
 img {
   vertical-align: middle;
-    height: 399px;
-    width: 386px;
-}
+    }
 .img-responsive,
 .thumbnail > img,
 .thumbnail a > img,
@@ -1139,7 +1136,7 @@ img {
   border-radius: 50%;
 }
 hr {
-  margin-top: 21px;
+  margin-top: 14px;
   margin-bottom: 21px;
   border-top: 1px solid #ecf0f1;
     width: 926px;
@@ -1615,6 +1612,7 @@ pre code {
   margin-right: -15px;
   margin-left: -15px;
     width: 963px;
+    height: 1346px;
 }
 .row-no-gutters {
   margin-right: 0;
@@ -1629,9 +1627,10 @@ pre code {
   min-height: 1px;
   padding-right: 15px;
   padding-left: 15px;
-    top: 10px;
+    top: 129px;
     left: 0px;
     width: 931px;
+    height: 402px;
 }
 .col-xs-1, .col-xs-2, .col-xs-3, .col-xs-4, .col-xs-5, .col-xs-6, .col-xs-7, .col-xs-8, .col-xs-9, .col-xs-10, .col-xs-11, .col-xs-12 {
   float: left;
