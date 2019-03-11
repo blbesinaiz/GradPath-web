@@ -104,7 +104,7 @@ figure {
 }
 hr {
   box-sizing: content-box;
-  height: 362px;
+  height: 18px;
 }
 pre {
   overflow: auto;
@@ -122,7 +122,7 @@ optgroup,
 select,
 textarea {
   color: inherit;
-  margin: 0 0 0 0px;
+  margin: 21px 0 0 0px;
 }
 button {
   overflow: visible;
@@ -1139,7 +1139,7 @@ hr {
   margin-top: 14px;
   margin-bottom: 21px;
   border-top: 1px solid #ecf0f1;
-    width: 926px;
+    width: 570px;
     border-left-style: none;
     border-left-color: inherit;
     border-left-width: 0;
@@ -1149,6 +1149,7 @@ hr {
     border-bottom-style: none;
     border-bottom-color: inherit;
     border-bottom-width: 0;
+    margin-left: 0px;
 }
 .sr-only {
   position: absolute;
@@ -1612,7 +1613,7 @@ pre code {
   margin-right: -15px;
   margin-left: -15px;
     width: 963px;
-    height: 1346px;
+    height: 517px;
 }
 .row-no-gutters {
   margin-right: 0;
@@ -1627,10 +1628,10 @@ pre code {
   min-height: 1px;
   padding-right: 15px;
   padding-left: 15px;
-    top: 129px;
-    left: 0px;
+    top: 40px;
+    left: 1px;
     width: 931px;
-    height: 402px;
+    height: 31px;
 }
 .col-xs-1, .col-xs-2, .col-xs-3, .col-xs-4, .col-xs-5, .col-xs-6, .col-xs-7, .col-xs-8, .col-xs-9, .col-xs-10, .col-xs-11, .col-xs-12 {
   float: left;
@@ -2571,7 +2572,6 @@ output {
 .form-control {
   display: block;
   width: 100%;
-  height: 45px;
   padding: 10px 15px;
   font-size: 15px;
   line-height: 1.42857143;

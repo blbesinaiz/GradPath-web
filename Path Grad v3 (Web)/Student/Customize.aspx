@@ -111,9 +111,9 @@
                                     <br />
                                     <br />
                                     <h3>
-                                        Previous Classes Taken<span> </span>
+                                        <span>Previous Classes Taken </span>
                                     </h3>
-
+                                    <asp:CheckBoxList ID="CheckBoxList1" runat="server"></asp:CheckBoxList>
                                     <br />
 
                                 </td>

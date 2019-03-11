@@ -8,7 +8,6 @@
 
     <div class="form-horizontal">
         <h4>Create a new account</h4>
-        <hr />
         <asp:ValidationSummary runat="server" CssClass="text-danger" />
         <div class="form-group">
             <asp:Label runat="server" AssociatedControlID="FirstName" CssClass="col-md-2 control-label">First Name</asp:Label>
@@ -29,7 +28,7 @@
          <div class="form-group">
             <asp:Label runat="server" AssociatedControlID="StudentID" CssClass="col-md-2 control-label">Student ID</asp:Label>
             <div class="col-md-10">
-                <asp:TextBox runat="server" ID="StudentID" CssClass="form-control" TextMode="Number" />
+                <asp:TextBox runat="server" ID="StudentID" CssClass="form-control" TextMode="Number" Width="282px" />
                 <asp:RequiredFieldValidator runat="server" ControlToValidate="StudentID"
                     CssClass="text-danger" ErrorMessage="The Student ID field is required." />
             </div>
@@ -37,7 +36,7 @@
          <div class="form-group">
             <asp:Label runat="server" AssociatedControlID="Classification" CssClass="col-md-2 control-label">Classification</asp:Label>
             <div class="col-md-10">
-                <asp:DropDownList ID="Classification" runat="server">
+                <asp:DropDownList ID="Classification" runat="server" Height="40px" Width="283px">
                      <asp:ListItem Enabled="true" Text="Select Classification" Value="-1"></asp:ListItem>
                      <asp:ListItem Text="Student" Value="Student"></asp:ListItem>
                      <asp:ListItem Text="Faculty" Value="Faculty"></asp:ListItem>
