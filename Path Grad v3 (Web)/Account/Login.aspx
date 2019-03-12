@@ -17,7 +17,6 @@
                         <asp:Label runat="server" ID="Attempt" CssClass="col-md-2 control-label">Attempt: </asp:Label>
                         <div class="col-md-10">
                             <asp:Label ID="txt_result" runat="server"></asp:Label>
-                     
                         </div>
                     </div>
                     <div class="form-group">

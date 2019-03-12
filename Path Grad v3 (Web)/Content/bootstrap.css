@@ -1108,7 +1108,9 @@ figure {
 }
 img {
   vertical-align: middle;
-    }
+    margin-left: 84px;
+    margin-top: 0px;
+}
 .img-responsive,
 .thumbnail > img,
 .thumbnail a > img,
@@ -1139,7 +1141,7 @@ hr {
   margin-top: 14px;
   margin-bottom: 21px;
   border-top: 1px solid #ecf0f1;
-    width: 926px;
+    width: 575px;
     border-left-style: none;
     border-left-color: inherit;
     border-left-width: 0;
@@ -1149,6 +1151,7 @@ hr {
     border-bottom-style: none;
     border-bottom-color: inherit;
     border-bottom-width: 0;
+    margin-left: 0px;
 }
 .sr-only {
   position: absolute;
@@ -1611,7 +1614,7 @@ pre code {
 .row {
   margin-right: -15px;
   margin-left: -15px;
-    width: 963px;
+    width: 1279px;
     height: 1346px;
 }
 .row-no-gutters {
@@ -1629,7 +1632,7 @@ pre code {
   padding-left: 15px;
     top: 129px;
     left: 0px;
-    width: 931px;
+    width: 1223px;
     height: 402px;
 }
 .col-xs-1, .col-xs-2, .col-xs-3, .col-xs-4, .col-xs-5, .col-xs-6, .col-xs-7, .col-xs-8, .col-xs-9, .col-xs-10, .col-xs-11, .col-xs-12 {

@@ -25,25 +25,89 @@
 </head>
 <body>
     <form runat="server">
-        <asp:ScriptManager runat="server">
-            <Scripts>
-                <%--To learn more about bundling scripts in ScriptManager see https://go.microsoft.com/fwlink/?LinkID=301884 --%>
-                <%--Framework Scripts--%>
-                <asp:ScriptReference Name="MsAjaxBundle" />
-                <asp:ScriptReference Name="jquery" />
-                <asp:ScriptReference Name="bootstrap" />
-                <asp:ScriptReference Name="WebForms.js" Assembly="System.Web" Path="~/Scripts/WebForms/WebForms.js" />
-                <asp:ScriptReference Name="WebUIValidation.js" Assembly="System.Web" Path="~/Scripts/WebForms/WebUIValidation.js" />
-                <asp:ScriptReference Name="MenuStandards.js" Assembly="System.Web" Path="~/Scripts/WebForms/MenuStandards.js" />
-                <asp:ScriptReference Name="GridView.js" Assembly="System.Web" Path="~/Scripts/WebForms/GridView.js" />
-                <asp:ScriptReference Name="DetailsView.js" Assembly="System.Web" Path="~/Scripts/WebForms/DetailsView.js" />
-                <asp:ScriptReference Name="TreeView.js" Assembly="System.Web" Path="~/Scripts/WebForms/TreeView.js" />
-                <asp:ScriptReference Name="WebParts.js" Assembly="System.Web" Path="~/Scripts/WebForms/WebParts.js" />
-                <asp:ScriptReference Name="Focus.js" Assembly="System.Web" Path="~/Scripts/WebForms/Focus.js" />
-                <asp:ScriptReference Name="WebFormsBundle" />
-                <%--Site Scripts--%>
-            </Scripts>
-        </asp:ScriptManager>
+                    <div class="col-md-4">
+                        <h3>Snapshot</h3>
+                            <asp:Panel ID="Panel_Snapshot" runat="server" BorderStyle="Solid" BorderWidth="1px" Height="262px">
+                                <hr align="left" color="Gainsboro" />
+                                    <!-- Table -->
+                                    <asp:Table ID="Table1" 
+                                        runat="server" 
+                                        Font-Size="Small" 
+                                        Width="567px" 
+                                        Font-Names="Palatino"
+                                        BackColor="Orange"
+                                        BorderColor="DarkRed"
+                                        BorderWidth="2"
+                                        ForeColor="Snow"
+                                        CellPadding="2"
+                                        CellSpacing="2" Height="141px"
+                                        >
+                                        <asp:TableHeaderRow 
+                                            runat="server" 
+                                            ForeColor="Snow"
+                                            BackColor="OliveDrab"
+                                            Font-Bold="true"
+                                            >
+                                            <asp:TableHeaderCell>Categories</asp:TableHeaderCell>
+                                            <asp:TableHeaderCell>Required</asp:TableHeaderCell>
+                                            <asp:TableHeaderCell>Current Earned</asp:TableHeaderCell>
+                                            <asp:TableHeaderCell>Current Remaining</asp:TableHeaderCell>
+                                        </asp:TableHeaderRow>
+                                        <asp:TableRow 
+                                            ID="TableRow1" 
+                                            runat="server" 
+                                            BackColor="OrangeRed"
+                                            >
+                                            <asp:TableCell>Institutional Credits: </asp:TableCell>
+                                            <asp:TableCell><asp:Label ID="Label1" runat="server" Text="30.00"></asp:Label>
+</asp:TableCell>
+                                            <asp:TableCell><asp:Label ID="Label2" runat="server" Text="0.00"></asp:Label>
+</asp:TableCell>
+                                            <asp:TableCell><asp:Label ID="Label3" runat="server" Text="30.00"></asp:Label>
+</asp:TableCell>
+                                        </asp:TableRow>
+                                        <asp:TableRow 
+                                            ID="TableRow2" 
+                                            runat="server" 
+                                            BackColor="DarkOrange"
+                                            >
+                                            <asp:TableCell>Institutional GPA: </asp:TableCell>
+                                            <asp:TableCell><asp:Label ID="Label4" runat="server" Text="2.0"></asp:Label>
+</asp:TableCell>
+                                            <asp:TableCell><asp:Label ID="Label5" runat="server" Text="4.0"></asp:Label>
+</asp:TableCell>
+                                            <asp:TableCell><asp:Label ID="Label6" runat="server" Text="Met"></asp:Label>
+</asp:TableCell>
+                                        </asp:TableRow>
+                                        <asp:TableRow 
+                                            ID="TableRow3" 
+                                            runat="server" 
+                                            BackColor="OrangeRed"
+                                            >
+                                            <asp:TableCell>Overall Credits:</asp:TableCell>
+                                            <asp:TableCell><asp:Label ID="Label7" runat="server" Text="120.00"></asp:Label>
+</asp:TableCell>
+                                            <asp:TableCell><asp:Label ID="Label8" runat="server" Text="0.00"></asp:Label>
+</asp:TableCell>
+                                            <asp:TableCell><asp:Label ID="Label9" runat="server" Text="120.00"></asp:Label>
+</asp:TableCell>
+                                        </asp:TableRow>
+                                        <asp:TableRow 
+                                            ID="TableRow4" 
+                                            runat="server" 
+                                            BackColor="DarkOrange"
+                                            >
+                                            <asp:TableCell>Overall GPA:</asp:TableCell>
+                                            <asp:TableCell><asp:Label ID="Label10" runat="server" Text="2.00"></asp:Label>
+</asp:TableCell>
+                                            <asp:TableCell><asp:Label ID="Label11" runat="server" Text="4.00"></asp:Label>
+</asp:TableCell>
+                                            <asp:TableCell><asp:Label ID="Label12" runat="server" Text="Met"></asp:Label>
+</asp:TableCell>
+                                        </asp:TableRow>
+                                    </asp:Table>
+                      </asp:Panel>
+                    </div>
 
         <!--  NAVIGATION BAR -->
         <div class="navbar navbar-inverse navbar-fixed-top">
@@ -79,15 +143,17 @@
         <div class="container body-content">
                 <div class="row">
                     <div class="col-md-4">
-                        <h3>Profile</h3>
-                            <asp:Panel ID="Panel_Profile" runat="server" BorderColor="Black" BorderStyle="Solid" BorderWidth="1px" Height="262px">
-                                <asp:Image ID="Profile_Pic" runat="server" Height="78px" Width="132px" BorderStyle="Solid" ImageAlign="Bottom" /><br />
+                        <h3>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <b><u>Profile</u></b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </h3>
+                            <asp:Panel ID="Panel_Profile" runat="server" BorderColor="Black" BorderStyle="Solid" BorderWidth="1px" Height="262px" Width="863px">
+                                <asp:Image ID="Profile_Pic" runat="server" Height="78px" Width="132px" BorderStyle="Solid" ImageAlign="Bottom" />
+                                <div style="float: right; clear: right"><b><u><center><h3>Progress</h3></center></u></b><br /> <asp:Image ID="Image1" runat="server" align="right" Height="254px" Width="528px" /></div>
+                                <br />
                                 <asp:Label ID="StudentID" runat="server" Text="Student ID: "></asp:Label>
-                                    &nbsp;&nbsp;<asp:TextBox ID="TextBox1" runat="server"></asp:TextBox>
+                                &nbsp;&nbsp;<asp:TextBox ID="TextBox1" runat="server"></asp:TextBox>
                                 <br />
                                 <br />
                                 <asp:Label ID="Email" runat="server" Text="Email: "></asp:Label>
-                                &nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                &nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;
                                 <asp:TextBox ID="TextBox2" runat="server" Width="158px"></asp:TextBox>
                                 <br />
                                 <br />
@@ -101,102 +167,12 @@
                                 <asp:TextBox ID="TextBox4" runat="server" Width="17px"></asp:TextBox>
                                 /100%<br /> <br />
                             </asp:Panel>
+                                <div style="float: right; clear: right"></div>
                     </div>
                     <!--  STUDENT STATUS -->
                     <div class="col-md-4">
-                        <h3>Progress </h3>
-                             <asp:Panel ID="Panel_Status" runat="server" BorderStyle="Solid" BorderWidth="1px" HorizontalAlign="Center" Height="262px">
-                                 <asp:Image ID="Image1" runat="server" Height="201px" Width="285px" />
-                              </asp:Panel>
                     </div>
                     <!--  STUDENT SNAPSHOT-->
-                    <div class="col-md-4">
-                        <h3>Snapshot</h3>
-                            <asp:Panel ID="Panel_Snapshot" runat="server" BorderStyle="Solid" BorderWidth="1px" Height="262px">
-                                <hr width="450" align="left" color="Gainsboro" />
-                                    <!-- Table -->
-                                    <asp:Table ID="Table1" 
-                                        runat="server" 
-                                        Font-Size="Small" 
-                                        Width="550" 
-                                        Font-Names="Palatino"
-                                        BackColor="Orange"
-                                        BorderColor="DarkRed"
-                                        BorderWidth="2"
-                                        ForeColor="Snow"
-                                        CellPadding="2"
-                                        CellSpacing="2"
-                                        >
-                                        <asp:TableHeaderRow 
-                                            runat="server" 
-                                            ForeColor="Snow"
-                                            BackColor="OliveDrab"
-                                            Font-Bold="true"
-                                            >
-                                            <asp:TableHeaderCell>Categories</asp:TableHeaderCell>
-                                            <asp:TableHeaderCell>Required</asp:TableHeaderCell>
-                                            <asp:TableHeaderCell>Current Earned</asp:TableHeaderCell>
-                                            <asp:TableHeaderCell>Current Remaining</asp:TableHeaderCell>
-                                        </asp:TableHeaderRow>
-                                        <asp:TableRow 
-                                            ID="TableRow1" 
-                                            runat="server" 
-                                            BackColor="OrangeRed"
-                                            >
-                                            <asp:TableCell>Institutional Credits: </asp:TableCell>
-                                            <asp:TableCell>
-                                                <asp:Label ID="Label1" runat="server" Text="30.00"></asp:Label></asp:TableCell>
-                                            <asp:TableCell>
-                                                <asp:Label ID="Label2" runat="server" Text="0.00"></asp:Label></asp:TableCell>
-                                            <asp:TableCell>
-                                                <asp:Label ID="Label3" runat="server" Text="30.00"></asp:Label>
-                                            </asp:TableCell>
-                                        </asp:TableRow>
-                                        <asp:TableRow 
-                                            ID="TableRow2" 
-                                            runat="server" 
-                                            BackColor="DarkOrange"
-                                            >
-                                            <asp:TableCell>Institutional GPA: </asp:TableCell>
-                                            <asp:TableCell>
-                                                <asp:Label ID="Label4" runat="server" Text="2.0"></asp:Label></asp:TableCell>
-                                            <asp:TableCell>
-                                                <asp:Label ID="Label5" runat="server" Text="4.0"></asp:Label></asp:TableCell>
-                                            <asp:TableCell>
-                                                <asp:Label ID="Label6" runat="server" Text="Met"></asp:Label>
-                                            </asp:TableCell>
-                                        </asp:TableRow>
-                                        <asp:TableRow 
-                                            ID="TableRow3" 
-                                            runat="server" 
-                                            BackColor="OrangeRed"
-                                            >
-                                            <asp:TableCell>Overall Credits:</asp:TableCell>
-                                            <asp:TableCell>
-                                                <asp:Label ID="Label7" runat="server" Text="120.00"></asp:Label></asp:TableCell>
-                                            <asp:TableCell>
-                                                <asp:Label ID="Label8" runat="server" Text="0.00"></asp:Label></asp:TableCell>
-                                            <asp:TableCell>
-                                                <asp:Label ID="Label9" runat="server" Text="120.00"></asp:Label>
-                                            </asp:TableCell>
-                                        </asp:TableRow>
-                                        <asp:TableRow 
-                                            ID="TableRow4" 
-                                            runat="server" 
-                                            BackColor="DarkOrange"
-                                            >
-                                            <asp:TableCell>Overall GPA:</asp:TableCell>
-                                            <asp:TableCell>
-                                                <asp:Label ID="Label10" runat="server" Text="2.00"></asp:Label></asp:TableCell>
-                                            <asp:TableCell>
-                                                <asp:Label ID="Label11" runat="server" Text="4.00"></asp:Label></asp:TableCell>
-                                            <asp:TableCell>
-                                                <asp:Label ID="Label12" runat="server" Text="Met"></asp:Label>
-                                            </asp:TableCell>
-                                        </asp:TableRow>
-                                    </asp:Table>
-                      </asp:Panel>
-                    </div>
                 </div>
             <br /><br />
 
