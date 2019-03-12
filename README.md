@@ -39,6 +39,7 @@ You can find a video demo here:....
      * Add JSON nuget package
         ```sh
         $ Install-Package Newtonsoft.Json
+        $ Install-Package System.Runtime.Serialization.Json -Version 4.3.0
         ```
 2. Mongo DB Server and Compass 
      * Install [MongoDB 4.0.6 Community Server](https://www.mongodb.com/download-center/community)
