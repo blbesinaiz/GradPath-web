@@ -254,6 +254,7 @@
     <Content Include="Scripts\WebForms\WebUIValidation.js" />
     <Content Include="Site.Master" />
     <Content Include="Student\AlternatePaths.aspx" />
+    <Content Include="Student\Images\defaultprofile.jpg" />
     <Content Include="Student\Images\InitialImage.png" />
     <Content Include="Student\Images\Roadmap\0.png" />
     <Content Include="Student\Images\Roadmap\1.png" />
