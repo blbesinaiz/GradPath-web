@@ -255,6 +255,15 @@
     <Content Include="Site.Master" />
     <Content Include="Student\AlternatePaths.aspx" />
     <Content Include="Student\Images\InitialImage.png" />
+    <Content Include="Student\Images\Roadmap\0.png" />
+    <Content Include="Student\Images\Roadmap\1.png" />
+    <Content Include="Student\Images\Roadmap\2.png" />
+    <Content Include="Student\Images\Roadmap\3.png" />
+    <Content Include="Student\Images\Roadmap\4.png" />
+    <Content Include="Student\Images\Roadmap\5.png" />
+    <Content Include="Student\Images\Roadmap\6.png" />
+    <Content Include="Student\Images\Roadmap\7.png" />
+    <Content Include="Student\Images\Roadmap\8.png" />
     <Content Include="Student\PerfectPath.aspx" />
     <Content Include="Student\Images\SelectedButton.png" />
     <Content Include="Student\Settings.aspx" />

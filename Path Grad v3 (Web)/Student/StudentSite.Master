@@ -146,7 +146,7 @@
                         <h3>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <b><u>Profile</u></b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </h3>
                             <asp:Panel ID="Panel_Profile" runat="server" BorderColor="Black" BorderStyle="Solid" BorderWidth="1px" Height="262px" Width="863px">
                                 <asp:Image ID="Profile_Pic" runat="server" Height="78px" Width="132px" BorderStyle="Solid" ImageAlign="Bottom" />
-                                <div style="float: right; clear: right"><b><u><center><h3>Progress</h3></center></u></b><br /> <asp:Image ID="Image1" runat="server" align="right" Height="254px" Width="528px" /></div>
+                                <div style="float: right; clear: right"><b><u><center><h3>Progress</h3></center></u></b><asp:Image ID="Image1" runat="server" align="right" Height="254px" Width="528px" img src="https://github.com/blbesinaiz/GradPath-web/blob/master/Path%20Grad%20v3%20(Web)/Img/Path%20To%20Grad%20Logo.png?raw=true"/></div>
                                 <br />
                                 <asp:Label ID="StudentID" runat="server" Text="Student ID: "></asp:Label>
                                 &nbsp;&nbsp;<asp:TextBox ID="TextBox1" runat="server"></asp:TextBox>
