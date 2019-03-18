@@ -224,6 +224,14 @@
     <Content Include="Content\bootswatch.less" />
     <Content Include="Content\variables.less" />
     <None Include="Scripts\jquery-3.3.1.intellisense.js" />
+    <Content Include="Image\4 - Roadmap FINAL - Chart.png" />
+    <Content Include="Image\4 - Roadmap FINAL - FreshDone.png" />
+    <Content Include="Image\4 - Roadmap FINAL - JuniorDone.png" />
+    <Content Include="Image\4 - Roadmap FINAL - SeniorDone.png" />
+    <Content Include="Image\4 - Roadmap FINAL - SophDone.png" />
+    <Content Include="Image\Grad.png" />
+    <Content Include="Image\Path To Grad Logo.png" />
+    <Content Include="Image\profile_icon.png" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
     <Content Include="Scripts\jquery-3.3.1.js" />
@@ -268,7 +276,7 @@
     <Content Include="Student\PerfectPath.aspx" />
     <Content Include="Student\Images\SelectedButton.png" />
     <Content Include="Student\Settings.aspx" />
-    <Content Include="Student\SimpleTabControl.aspx" />
+    <Content Include="Student\Customize.aspx" />
     <Content Include="Student\WhatIf.aspx" />
     <Content Include="ViewSwitcher.ascx" />
     <Content Include="Web.config" />
@@ -407,12 +415,12 @@
     <Compile Include="Student\Settings.aspx.designer.cs">
       <DependentUpon>Settings.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Student\SimpleTabControl.aspx.cs">
-      <DependentUpon>SimpleTabControl.aspx</DependentUpon>
+    <Compile Include="Student\Customize.aspx.cs">
+      <DependentUpon>Customize.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Student\SimpleTabControl.aspx.designer.cs">
-      <DependentUpon>SimpleTabControl.aspx</DependentUpon>
+    <Compile Include="Student\Customize.aspx.designer.cs">
+      <DependentUpon>Customize.aspx</DependentUpon>
     </Compile>
     <Compile Include="Student\StudentSite.Master.cs">
       <DependentUpon>StudentSite.Master</DependentUpon>
