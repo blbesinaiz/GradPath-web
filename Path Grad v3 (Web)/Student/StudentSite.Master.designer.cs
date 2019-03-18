@@ -193,15 +193,6 @@ namespace Path_Grad_v3__Web_.Student {
         protected global::System.Web.UI.WebControls.Image Profile_Pic;
         
         /// <summary>
-        /// Image1 control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Image Image1;
-        
-        /// <summary>
         /// StudentID control.
         /// </summary>
         /// <remarks>
@@ -272,6 +263,15 @@ namespace Path_Grad_v3__Web_.Student {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.TextBox TextBox4;
+        
+        /// <summary>
+        /// Image1 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Image Image1;
         
         /// <summary>
         /// MainContent control.
