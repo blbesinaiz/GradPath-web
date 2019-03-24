@@ -79,41 +79,8 @@
         <div class="container body-content">
                 <div class="row">
                     <div class="col-md-4">
-                        <h3>Profile</h3>
-                            <asp:Panel ID="Panel_Profile" runat="server" BorderColor="Black" BorderStyle="Solid" BorderWidth="1px" Height="262px">
-                                <asp:Image ID="Profile_Pic" runat="server" Height="78px" Width="132px" BorderStyle="Solid" ImageAlign="Bottom" /><br />
-                                <asp:Label ID="StudentID" runat="server" Text="Student ID: "></asp:Label>
-                                    &nbsp;&nbsp;<asp:TextBox ID="TextBox1" runat="server"></asp:TextBox>
-                                <br />
-                                <br />
-                                <asp:Label ID="Email" runat="server" Text="Email: "></asp:Label>
-                                &nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                                <asp:TextBox ID="TextBox2" runat="server" Width="158px"></asp:TextBox>
-                                <br />
-                                <br />
-                                <asp:Label ID="Advisor" runat="server" Text="Advisor: "></asp:Label>
-                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                                <asp:TextBox ID="TextBox3" runat="server" Width="161px"></asp:TextBox>
-                                <br />
-                                <br />
-                                <asp:Button ID="Button1" runat="server" OnClientClick="OpenNewWindow();" Text="Customize" />
-                                &nbsp;&nbsp;&nbsp; Complete:
-                                <asp:TextBox ID="TextBox4" runat="server" Width="17px"></asp:TextBox>
-                                /100%<br /> <br />
-                            </asp:Panel>
-                    </div>
-                    <!--  STUDENT STATUS -->
-                    <div class="col-md-4">
-                        <h3>Progress </h3>
-                             <asp:Panel ID="Panel_Status" runat="server" BorderStyle="Solid" BorderWidth="1px" HorizontalAlign="Center" Height="262px">
-                                 <asp:Image ID="Image1" runat="server" Height="201px" Width="285px" />
-                              </asp:Panel>
-                    </div>
-                    <!--  STUDENT SNAPSHOT-->
-                    <div class="col-md-4">
                         <h3>Snapshot</h3>
                             <asp:Panel ID="Panel_Snapshot" runat="server" BorderStyle="Solid" BorderWidth="1px" Height="262px">
-                                <hr width="450" align="left" color="Gainsboro" />
                                     <!-- Table -->
                                     <asp:Table ID="Table1" 
                                         runat="server" 
@@ -197,6 +164,38 @@
                                     </asp:Table>
                       </asp:Panel>
                     </div>
+                    <div class="col-md-4">
+                        <h3>Profile</h3>
+                            <asp:Panel ID="Panel_Profile0" runat="server" BorderColor="Black" BorderStyle="Solid" BorderWidth="1px" Height="262px" Width="299px">
+                                <asp:Image ID="Profile_Pic0" runat="server" Height="92px" Width="100px" BorderStyle="Solid" Align="text-acenter" ImageUrl="https://github.com/blbesinaiz/GradPath-web/blob/Donn3/Path%20Grad%20v3%20(Web)/Student/Images/defaultprofile.jpg?raw=true" /><br />
+                                <asp:Label ID="StudentID0" runat="server" Text="Student ID: "></asp:Label>
+                                    &nbsp;&nbsp;<asp:TextBox ID="TextBox5" runat="server"></asp:TextBox>
+                                <br />
+                                <br />
+                                <asp:Label ID="Email0" runat="server" Text="Email: "></asp:Label>
+                                &nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                <asp:TextBox ID="TextBox6" runat="server" Width="158px"></asp:TextBox>
+                                <br />
+                                <br />
+                                <asp:Label ID="Advisor0" runat="server" Text="Advisor: "></asp:Label>
+                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                <asp:TextBox ID="TextBox7" runat="server" Width="161px"></asp:TextBox>
+                                <br />
+                                <br />
+                                <asp:Button ID="Button2" runat="server" OnClientClick="OpenNewWindow();" Text="Customize" />
+                                &nbsp;&nbsp;&nbsp; Complete:
+                                <asp:TextBox ID="TextBox8" runat="server" Width="17px"></asp:TextBox>
+                                /100%<br /> <br />
+                            </asp:Panel>
+                    </div>
+                    <!--  STUDENT STATUS -->
+                    <div class="col-md-4">
+                        <h3>Progress </h3>
+                             <asp:Panel ID="Panel_Status" runat="server" BorderStyle="Solid" BorderWidth="1px" HorizontalAlign="Center" Height="262px" >
+                                 <asp:Image ID="Image1" runat="server" img src = "https://github.com/blbesinaiz/GradPath-web/blob/Donn3/Path%20Grad%20v3%20(Web)/Student/Images/Roadmap/0.png?raw=true" Height="259px" ImageAlign="Right" Width="398px"/>
+                              </asp:Panel>
+                    </div>
+                    <!--  STUDENT SNAPSHOT-->
                 </div>
             <br /><br />
 
